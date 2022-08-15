@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="paiement">
+        <fieldset>
+            <legend>Votre identité</legend>
+
+            <ol>
+                <li>
+                    <label for="nom">Nom:</label>
+                    <input type="text" id="nom" placeholder="dione">
+                </li>
+                <li>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" placeholder="dionelamine0410@gmail.com">
+                </li>
+                <li>
+                    <label for="téléphone">Téléphone:</label>
+                    <input type="text" id="téléphone" placeholder="768863288">
+                </li>
+            </ol>
+        </fieldset>
+
+        <fieldset>
+            <label>Adresse de livraison</label>
+            <ol>
+                <li>
+                    <label for="adresse">Adresse:</label>
+                    <textarea id="adresse" name="adresse" rows="5" required></textarea>
+                </li>
+                <li>
+                    <label for="codepostal">Code postal:</label>
+                    <input type="text" id="codepostal" placeholder="15540025" required>
+                </li>
+                <li>
+                    <label for="pays">Pays:</label>
+                    <input type="text" id="pays" placeholder="Sénégal" required>
+                </li>
+            </ol>
+        </fieldset>
+        <fieldset>
+            <legend>Information CB</legend>
+            <ol>
+                <li>
+                    <fieldset>
+                        <legend>Type carte bancaire</legend>
+                        <ol>
+                            <li>
+                                <input id="visa" name="type_de_carte" type="radio">
+                                <label for="visa">Visa</label>
+                            </li>
+                            <li>
+                                <input id="amex" name="type_de_carte" type="radio">
+                                <label for="amex">AmEx</label>
+                            </li>
+                            <li>
+                                
+                                <input id="mastercard" name="type_de_carte" type="radio">
+                                <label for="mastercard">Mastercard</label>
+                            </li>
+                        </ol>
+                    </fieldset>
+                </li>
+                <li>
+                    <label for="numero_de_carte">No de carte</label>
+                    <input id="numero_de_carte" name="numero_de_carte" type="number" required>
+                </li>
+                <li>
+                    <label for="securite">Code sécurité</label>
+                    <input id="securite" name="securite" type="number" required>
+                </li>
+                <li>
+                    <label for="nom_porteur">Nom du porteur</label>
+                    <input id="nom_porteur" name="nom_porteur" type="text" placeholder="Mème nom que sur la carte" required>
+                </li>
+            </ol>
+        </fieldset>
+
+        <fieldset>
+            <button type="submit">J'achète !</button>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
